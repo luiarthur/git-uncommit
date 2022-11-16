@@ -26,7 +26,6 @@ else
 fi
 ```
 
-
 # REQUIREMENTS
 
 - `pandoc`
