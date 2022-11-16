@@ -12,6 +12,20 @@ DESCRIPTION
 ===========
 Undoes the last `commit` and `add`. This way, you can potentially stash away changes.
 
+EXAMPLE
+=======
+
+```bash
+git add -A
+git commit -m 'I did not really want to commit to main'
+
+git uncommit
+git stash
+git checkout -b dev
+git add -A
+git commit -m "I meant to commit on dev"
+```
+
 Options
 =======
 None.

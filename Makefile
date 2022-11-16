@@ -1,13 +1,13 @@
 #!/bin/bash
 
 SCRIPT_NAME = git-uncommit
-MAN_PATH = ~/.myman/man/man1
+MANPATH = ~/.local/share/man/man1
 
 docs:
-	mkdir -p ${MAN_PATH}
+	mkdir -p ${MANPATH}
 	pandoc man/${SCRIPT_NAME}.md -s -t man -o ${SCRIPT_NAME}.1
-	mv ${SCRIPT_NAME}.1 ${MAN_PATH}
-	gzip ${MAN_PATH}/${SCRIPT_NAME}.1
+	mv ${SCRIPT_NAME}.1 ${MANPATH}
+	gzip ${MANPATH}/${SCRIPT_NAME}.1
 
 install: docs
 	mkdir -p ~/bin

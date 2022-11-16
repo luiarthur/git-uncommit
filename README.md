@@ -6,3 +6,7 @@ Undo the last commit and add, keeping the changes so they can be stashed.
 ```console
 make install
 ```
+
+# REQUIREMENTS
+
+- `pandoc`
