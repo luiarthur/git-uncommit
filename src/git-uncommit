@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Usage:
+# Undo the last commit by:
+# > git uncommit
+
+# Installation:
+# 1. Put this file in `~/bin/git-uncommit`
+# 2. `chmod +x ~/bin/git-uncommit`
+
+git reset HEAD^
