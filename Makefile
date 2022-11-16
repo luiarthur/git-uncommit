@@ -3,6 +3,8 @@
 SCRIPT_NAME = git-uncommit
 MANPATH = ~/.local/share/man/man1
 
+all: install
+
 docs:
 	mkdir -p ${MANPATH}
 	pandoc man/${SCRIPT_NAME}.md -s -t man -o ${SCRIPT_NAME}.1
